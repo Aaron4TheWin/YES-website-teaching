@@ -31,12 +31,6 @@ var layout = {
   }
 };
 
-var greenBtn = document.querySelector('button');
-
-greenBtn.addEventListener('click', function () {
-  greenBtn.style.background = 'red';
-})
-
 var data = [
   {
     x: ['Blue', 'Cyan', 'Green', 'Yellow', 'Orange', 'Red', 'Deep Red'],
