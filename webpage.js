@@ -31,15 +31,29 @@ var layout = {
   }
 };
 
-TESTER = document.getElementById("tester");
-Plotly.newPlot(
-  TESTER,
-  [
-    {
-      x: ['red', 'green', 'orange', 'yellow', 'purple'],
-      y: [1, 2, 4, 8, 16],
+var greenBtn = document.querySelector('button');
+
+greenBtn.addEventListener('click', function () {
+  greenBtn.style.background = 'red';
+})
+
+var data = [
+  {
+    x: ['Blue', 'Cyan', 'Green', 'Yellow', 'Orange', 'Red', 'Deep Red'],
+    y: [31.92, 55.72, 45.16, 29.79, 24.75, 32.50, 49.25],
+    marker:{
+      color: ['rgba(0,14,255,0.75)', 'rgba(12,210,231,0.75)', 'rgba(20,200,35,0.75)', 'rgba(255,255,0,0.75)', 'rgba(255,200,0,0.75)', 'rgba(255,0,0,0.75)', 'rgba(152,1,1,0.75)']
+    },
     type: 'bar'
-    }
-  ],
-  layout
-);
+  }
+];
+
+var layout = {
+  title: 'Spectrometer Percent Reflectance by Color',
+  yaxis: {title: 'Perceny Reflectance'},
+  xaxis: {title: 'Color'},
+  barcornerradius: 10,
+  barmode: 'stack'
+};
+
+Plotly.newPlot('data', data, layout);
