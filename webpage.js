@@ -44,7 +44,7 @@ var data = [
 
 var layout = {
   title: 'Spectrometer Percent Reflectance by Color',
-  yaxis: {title: 'Perceny Reflectance'},
+  yaxis: {title: 'Percent Reflectance'},
   xaxis: {title: 'Color'},
   barcornerradius: 10,
   barmode: 'stack'
