@@ -33,7 +33,7 @@ var layout = {
 
 var data = [
   {
-    x: ['Blue', 'Cyan', 'Green', 'Yellow', 'Orange', 'Red', 'Deep Red'],
+    x: ['Blue (470)', 'Cyan (525)', 'Green (560)', 'Yellow (585)', 'Orange (610)', 'Red (645)', 'Deep Red (700)'],
     y: [31.92, 55.72, 45.16, 29.79, 24.75, 32.50, 49.25],
     marker:{
       color: ['rgba(0,14,255,0.75)', 'rgba(12,210,231,0.75)', 'rgba(20,200,35,0.75)', 'rgba(255,255,0,0.75)', 'rgba(255,200,0,0.75)', 'rgba(255,0,0,0.75)', 'rgba(152,1,1,0.75)']
